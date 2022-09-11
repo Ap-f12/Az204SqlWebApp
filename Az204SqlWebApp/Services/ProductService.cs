@@ -29,7 +29,7 @@ namespace Az204SqlWebApp.Services
         private SqlConnection GetConnection()
         {
 
-            return new SqlConnection(_configuration["SQLConnection"]);
+            return new SqlConnection(_configuration["az204ProdSqlConnectionString"]);
         }
         public List<ProductModel> GetProducts()
         {

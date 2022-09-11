@@ -4,7 +4,7 @@ using Microsoft.FeatureManagement;
 
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration["Az204ProdSqlConnectionString"];
+var connectionString = builder.Configuration["configConnectionString"];
 
 
 builder.Host.ConfigureAppConfiguration(builder =>
